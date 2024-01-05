@@ -1,0 +1,900 @@
+<div class="container ">
+    <!-- <p class="my-3"> Veuillez saisir lez parametre de connexion au donnees</p> -->
+    <mat-stepper orientation="vertical">
+        <mat-step>
+            <ng-template matStepLabel>Localisation des données</ng-template>
+            <ng-template matStepContent>
+                <span class="pb-4"> <em>
+                    Veuillez definir les parametres de connexions aux donnees
+                </em>
+                   
+                </span>
+                <div class="row d-flex justify-content-center">
+                    <p class="text-center h4">Mode de connexion au données</p>
+                </div>
+                <div class="row">
+                    <div class="col-md-4"></div>
+                    <div class="col-md-8">
+                        <input type="radio" id="html" name="fav_language" value="HTML" />
+                        <label for="html" class="ml-1">Repertoire partagé</label><br>
+                        <div class="mb-4 mt-2 ml-4">
+                            <label for="directory">Choisir fichier : </label> <input id="design" class="btn btn-success" type="file" webkitdirectory="true" directory/>
+
+                        </div>
+                        <input type="radio" id="css" name="fav_language" value="CSS" />
+                        <label for="css">Serveur de données</label>
+                        <div class="row">
+                            <div class="col-md-3">
+                                <label class=" form-control-sm ml-3 mr-4" for="text-input">serveur</label>
+                            </div>
+                            <div class="col-md-auto">
+                                <input class="input" class="form-control mb-1" id="text-input" type="text" />
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-3">
+                                <label class="form-control-sm ml-3 mr-4" for="text-input">Utilisateur</label>
+                            </div>
+                            <div class="col-md-auto">
+                                <input class="input form-control mb-1" id="text-input" type="text" />
+                            </div>
+
+
+                        </div>
+                        <div class="row">
+
+
+                            <div class="col-md-3">
+                                <label class="form-control-sm ml-3 mr-4" for="text-input">Mot de passe</label>
+                            </div>
+                            <div class="col-md-auto">
+                                <input class="input form-control mb-1" id="text-input" type="password" />
+                            </div>
+
+                        </div>
+                        <div class="row">
+                            <div class="col-md-3">
+                                <label class="form-control-sm ml-3 mr-4" for="text-input">Base</label>
+                            </div>
+                            <div class="col-md-auto">
+                                <input class="input form-control mb-1" id="text-input" type="password" />
+                            </div>
+                            <!-- <label class="mr-4" for="text-input">Base</label> -->
+                            <!-- <input class="input" id="text-input" type="text" /> -->
+
+                        </div>
+                    </div>
+
+                </div>
+
+
+
+
+
+                <!-- <input type="radio" id="javascript" name="fav_language" value="JavaScript" /> -->
+                <!-- <label for="javascript">JavaScript</label> -->
+                <!-- <p>This content was rendered lazily</p> -->
+                <div class="d-flex justify-content-center">
+                    <button class="d-inline btn btn-success mt-4" mat-button matStepperNext>Suivant</button>
+
+                </div>
+            </ng-template>
+        </mat-step>
+        <mat-step>
+            <div class="row mb-3">
+                <span> <em>
+                    Merci de choisir la langue choisi pour saisir vos donnees
+                 </em>
+            </span>
+            </div>
+
+            <ng-template matStepLabel>Langues de saisie</ng-template>
+            <ng-template matStepContent>
+
+                <div class="row">
+                    <div class="col-md-3">
+
+                    </div>
+                    <div class="col-md-9">
+                        <div class="row py-1 col-md-7 border">
+                            <p> <span class="text-dark bg-white mb-4" id="titre">Langue</span></p>
+                            <div class="radio-toolbar d-flex justify-content-center">
+                                <input type="radio" id="radioApple" name="radioFruit" value="apple" checked>
+                                <label for="radioApple">Francais</label>
+
+                                <input type="radio" id="radioBanana" name="radioFruit" value="banana">
+                                <label for="radioBanana">Anglais</label>
+
+                                <input type="radio" id="radioOrange" name="radioFruit" value="orange">
+                                <label for="radioOrange">Arabe</label>
+                            </div>
+
+
+
+                        </div>
+                        <div class="row py-1">
+                            <div class="col-md-3">
+                                <label class="mr-1" for="text-input">Choix du pays</label>
+
+                            </div>
+                            <div class="col-md-auto">
+                                <select class="form-select px-5 form-control " aria-label=".form-select-sm example">
+                                    <option selected>Open this select menu</option>
+                                    <option value="1">One</option>
+                                    <option value="2">Two</option>
+                                    <option value="3">Three</option>
+                                  </select>
+
+                            </div>
+                        </div>
+                        <div class="row py-1">
+                            <div class="col-md-3">
+                                <label class="mr-1" for="text-input">Code de l'établissement</label>
+
+                            </div>
+                            <div class="col-md-auto">
+                                <input class="form-control  px-4 input" id="text-input" type="text" />
+
+                            </div>
+                        </div>
+                        <div class="row py-1">
+                            <div class="col-md-3">
+                                <label class="mr-1" for="text-input">Zone d'inspection</label>
+
+                            </div>
+                            <div class="col-md-auto">
+                                <input class="form-control  px-4 input" id="text-input" type="text" />
+
+                            </div>
+                        </div>
+                        <div class="row py-1">
+                            <div class="col-md-3">
+                                <label class="mr-1" for="text-input">Code département</label>
+
+                            </div>
+                            <div class="col-md-auto">
+                                <input class="form-control  px-4 input" id="text-input" type="text" />
+
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+                <div class="d-flex justify-content-center mt-4">
+                    <button class="btn btn-warning" mat-button matStepperPrevious>Précédent</button>
+                    <button class="btn btn-success ml-2 px-4 text-center" mat-button matStepperNext>Suivant</button>
+
+                </div>
+
+            </ng-template>
+        </mat-step>
+        <mat-step>
+            <ng-template matStepLabel>Information générales</ng-template>
+            <div class="row mb-3">
+                <span class="pb-4"> <em>
+                    Veuillez Saisir les informations relatives a votre etablissement
+                </em>
+                </span>
+            </div>
+
+            <div class="row ">
+                <div class="col-md-6">
+                    <div class="row py-1">
+                        <div class="col-md-4">
+                            <label class="mr-1" for="text-input">Type de Lycée</label>
+
+                        </div>
+                        <div class="col-md-6">
+                            <select class="form-select form-control form-select-sm" aria-label=".form-select-sm example">
+                                <option selected>Open this select menu</option>
+                                <option value="1">One</option>
+                                <option value="2">Two</option>
+                                <option value="3">Three</option>
+                              </select>
+
+                        </div>
+                    </div>
+                    <div class="row py-1">
+                        <div class="col-md-4">
+                            <label class="mr-1" for="text-input">Nature</label>
+
+                        </div>
+                        <div class="col-md-6">
+                            <select class="form-select form-control form-select-sm" aria-label=".form-select-sm example">
+                                <option selected>Open this select menu</option>
+                                <option value="1">One</option>
+                                <option value="2">Two</option>
+                                <option value="3">Three</option>
+                              </select>
+
+                        </div>
+                    </div>
+                    <div class="row py-1">
+
+                        <div class="col-md-4">
+                            <label class="mr-1" for="text-input">Type des éleves</label>
+
+                        </div>
+                        <div class="col-md-6">
+                            <select class="form-select form-control form-select-sm" aria-label=".form-select-sm example">
+                                <option selected>Open this select menu</option>
+                                <option value="1">One</option>
+                                <option value="2">Two</option>
+                                <option value="3">Three</option>
+                              </select>
+
+                        </div>
+                    </div>
+                    <div class="row py-1 pb-4">
+                        <div class="col-md-4">
+                            <label class="mr-1" for="text-input">Code département</label>
+
+                        </div>
+                        <div class="col-md-6">
+                            <input class="form-control  form-control px-4 input" id="text-input" type="text" />
+
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="profile-pic">
+                        <label class="-label" for="file">
+                              <span class="glyphicon glyphicon-camera"></span>
+            <span>Ajouter</span>
+            </label>
+                        <input id="file" type="file" onchange="loadFile(event)" />
+                        <img src="./assets/img/pic.png" id="output" width="100" />
+                    </div>
+                </div>
+
+                <div class="col-md-6">
+
+                    <!-- Begin info caracteres latin -->
+                    <div class="row py-1 border" id="col">
+                        <p> <span class="text-dark bg-white mb-4" id="titre">Informations en caracteres latins</span></p>
+                        <div class="row">
+                            <div class="col-md-4">
+                                <label class="mr-1" for="text-input">Nom</label>
+
+                            </div>
+                            <div class="col-md-4">
+                                <input class="form-control  px-4 input" id="text-input" type="text" />
+
+                            </div>
+                        </div>
+                        <div class="row py-1">
+                            <div class="col-md-4">
+                                <label class="mr-1" for="text-input">Adresse</label>
+
+                            </div>
+                            <div class="col-md-4">
+                                <input class="form-control  px-4 input" id="text-input" type="text" />
+
+                            </div>
+                        </div>
+                        <div class="row py-1">
+                            <div class="col-md-4">
+                                <label class="mr-1" for="text-input">Code postal</label>
+
+                            </div>
+                            <div class="col-md-4">
+                                <input class="form-control  px-4 input" id="text-input" type="text" />
+
+                            </div>
+                        </div>
+                        <div class="row py-1">
+                            <div class="col-md-4">
+                                <label class="mr-1" for="text-input">Ville</label>
+
+                            </div>
+                            <div class="col-md-4">
+                                <input class="form-control  px-4 input" id="text-input" type="text" />
+
+                            </div>
+                        </div>
+                        <div class="row py-1">
+                            <div class="col-md-4">
+                                <label class="mr-1" for="text-input">Academie</label>
+
+                            </div>
+                            <div class="col-md-4">
+                                <input class="form-control  px-4 input" id="text-input" type="text" />
+
+                            </div>
+                        </div>
+
+                    </div>
+
+
+                </div>
+                <div class="col-md-6">
+                    <!-- Begin info en plus-->
+                    <div class="row py-1 border">
+                        <p> <span class="text-dark bg-white mb-4" id="titre">Plus</span></p>
+                        <div class="row">
+                            <div class="col-md-4">
+                                <label class="mr-1" for="text-input">Téléphone</label>
+
+                            </div>
+                            <div class="col-md-4">
+                                <input class="form-control  px-4 input" id="text-input" type="text" />
+
+                            </div>
+                        </div>
+                        <div class="row py-1">
+                            <div class="col-md-4">
+                                <label class="mr-1" for="text-input">Télécopie</label>
+
+                            </div>
+                            <div class="col-md-4">
+                                <input class="form-control  px-4 input" id="text-input" type="text" />
+
+                            </div>
+                        </div>
+                        <div class="row py-1">
+                            <div class="col-md-4">
+                                <label class="mr-1" for="text-input">Site internet</label>
+
+                            </div>
+                            <div class="col-md-4">
+                                <input class="form-control  px-4 input" id="text-input" type="text" />
+
+                            </div>
+                        </div>
+                        <div class="row py-1">
+                            <div class="col-md-4">
+                                <label class="mr-1" for="text-input">Email</label>
+
+                            </div>
+                            <div class="col-md-4">
+                                <input class="form-control  px-4 input" id="text-input" type="text" />
+
+                            </div>
+                        </div>
+                        <div class="row py-1">
+                            <div class="col-md-4">
+                                <label class="mr-1" for="text-input">Academie</label>
+
+                            </div>
+                            <div class="col-md-4">
+                                <input class="form-control  px-4 input" id="text-input" type="text" />
+
+                            </div>
+                        </div>
+
+                    </div>
+
+                </div>
+            </div>
+            <div class="row">
+
+            </div>
+            <!-- <p>This content was rendered eagerly</p> -->
+            <div class="d-flex justify-content-center mt-3">
+                <button class="btn btn-warning" mat-button matStepperPrevious>Précédent</button>
+                <button class="btn btn-success ml-2 px-4 text-center" mat-button matStepperNext>Suivant</button>
+
+            </div>
+            <!-- <button class="btn btn-default" mat-button matStepperPrevious>Precedent</button>
+            <button class="btn btn-success" mat-button matStepperNext>Suivant</button> -->
+        </mat-step>
+        <mat-step>
+            <div class="row mb-3">
+                <span class="pb-4"> <em>
+                    Veuillez Saisir les informations relatives a votre etablissement
+                </em>
+                </span>
+            </div>
+            <ng-template matStepLabel>Informations supplementaires</ng-template>
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="row">
+                        <div class="row my-1">
+                            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                            <!-- <div class="input-group-append"> -->
+                            <label class="form-check-label small   ml-3" for="flexCheckDefault" id="label">
+                            Considerer coefficients lors du calcul de la moyenne générale
+                            </label>
+                            <!-- </div> -->
+
+                        </div>
+                        <div class="row my-1">
+                            <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" checked>
+                            <label class="form-check-label small ml-3" for="flexCheckChecked" id="label">
+                              Considerer les coefficients lors du calculs de la moyenne des groupes de matieres
+                            </label>
+                        </div>
+                        <div class="row my-1">
+                            <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" checked>
+                            <label class="form-check-label small ml-3" for="flexCheckChecked" id="label">
+                              Considerer les coefficients lors du calculs de la moyenne des groupe de matieres
+                            </label>
+                        </div>
+                        <div class="row my-1">
+                            <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" checked>
+                            <label class="form-check-label small ml-3" for="flexCheckChecked" id="label">
+                              Imprimer les signature des enseignants sur les bulletins
+                            </label>
+                        </div>
+                        <div class="row my-1">
+                            <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" checked>
+                            <label class="form-check-label small ml-3" for="flexCheckChecked" id="label">
+                              Imprimer les récompenses sanctions sur les bulletins
+                            </label>
+                        </div>
+                        <div class="row my-1">
+                            <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" checked>
+                            <label class="form-check-label small ml-3" for="flexCheckChecked" id="label">
+                              Séparer les matieres éssentielles sur les bulletins
+                            </label>
+                        </div>
+                        <div class="row my-1">
+                            <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" checked>
+                            <label class="form-check-label small ml-3" for="flexCheckChecked" id="label">
+                              Imprimer la date du jour sur les bulletins
+                            </label>
+                        </div>
+                        <div class="row my-1">
+                            <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" checked>
+                            <label class="form-check-label small mb-5 ml-3" for="flexCheckChecked" id="label">
+                              Gestions des conséquences
+                            </label>
+                        </div>
+
+                    </div>
+                    <!-- <div class="row"> -->
+                    <div class="row py-1 pb-3 col-md-6 border">
+                        <p> <span class="text-dark bg-white mb-4" id="titre">Langue</span></p>
+                        <div class=" d-flex justify-content-center">
+                            <input type="radio" class="mr-2" id="radioApple" name="radioFruit" value="apple" checked>
+                            <label for="radioApple" class="mr-2">Francais</label>
+
+                            <input type="radio" id="radioBanana" name="radioFruit" value="banana">
+                            <label for="radioBanana" class="mr-2">Anglais</label>
+
+                            <input type="radio" class="mr-2" id="radioOrange" name="radioFruit" value="orange">
+                            <label for="radioOrange" class="mr-2">Arabe</label>
+                        </div>
+
+
+
+                        <!-- </div> -->
+                    </div>
+
+                </div>
+                <div class="col-md-6">
+                    <div class="row mb-2">
+                        <div class="col-md-6">
+                            <div>
+                                <form class="row">
+                                    <div class="col-12">
+                                        <div class="input-group">
+                                            <span class=" h6 mr-2 mt-2">Trimestre 1</span>
+                                            <input class="form-control" placeholder="dd/mm/yyyy" name="d2" #c2="ngModel" [(ngModel)]="model" ngbDatepicker #d2="ngbDatepicker">
+                                            <button class="btn btn-outline-secondary calendar" (click)="d2.toggle()" type="button"></button>
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div>
+                                <form class="row">
+                                    <div class="col-12">
+                                        <div class="input-group">
+                                            <span class=" h6 mr-2 mt-2">Trimestre 1</span>
+                                            <input class="form-control" placeholder="dd/mm/yyyy" name="d2" #c2="ngModel" [(ngModel)]="model" ngbDatepicker #d2="ngbDatepicker">
+                                            <button class="btn btn-outline-secondary calendar" (click)="d2.toggle()" type="button"></button>
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="row mb-2">
+                        <div class="col-md-6">
+                            <div>
+                                <form class="row ml-2">
+                                    <div class="col-12">
+                                        <div class="input-group">
+                                            <span class="mr-2 mt-2">Sequence 1</span>
+                                            <input class="form-control" placeholder="dd/mm/yyyy" name="d2" #c2="ngModel" [(ngModel)]="model" ngbDatepicker #d2="ngbDatepicker">
+                                            <button class="btn btn-outline-secondary calendar" (click)="d2.toggle()" type="button"></button>
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div>
+                                <form class="row ml-2">
+                                    <div class="col-12">
+                                        <div class="input-group">
+                                            <span class="mr-2 mt-2">Sequence 1</span>
+                                            <input class="form-control" placeholder="dd/mm/yyyy" name="d2" #c2="ngModel" [(ngModel)]="model" ngbDatepicker #d2="ngbDatepicker">
+                                            <button class="btn btn-outline-secondary calendar" (click)="d2.toggle()" type="button"></button>
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="row mb-2">
+                        <div class="col-md-6">
+                            <div>
+                                <form class="row ml-2">
+                                    <div class="col-12">
+                                        <div class="input-group">
+                                            <span class="mr-2 mt-2"> Sequence 2</span>
+                                            <input class="form-control" placeholder="dd/mm/yyyy" name="d2" #c2="ngModel" [(ngModel)]="model" ngbDatepicker #d2="ngbDatepicker">
+                                            <button class="btn btn-outline-secondary calendar" (click)="d2.toggle()" type="button"></button>
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div>
+                                <form class="row ml-2">
+                                    <div class="col-12">
+                                        <div class="input-group">
+                                            <span class="mr-2 mt-2">Sequence 2</span>
+                                            <input class="form-control" placeholder="dd/mm/yyyy" name="d2" #c2="ngModel" [(ngModel)]="model" ngbDatepicker #d2="ngbDatepicker">
+                                            <button class="btn btn-outline-secondary calendar" (click)="d2.toggle()" type="button"></button>
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="row mb-2">
+                        <div class="col-md-6">
+                            <div>
+                                <form class="row">
+                                    <div class="col-12">
+                                        <div class="input-group">
+                                            <span class=" h6 mr-2 mt-2">Trimestre 2</span>
+                                            <input class="form-control" placeholder="dd/mm/yyyy" name="d2" #c2="ngModel" [(ngModel)]="model" ngbDatepicker #d2="ngbDatepicker">
+                                            <button class="btn btn-outline-secondary calendar" (click)="d2.toggle()" type="button"></button>
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div>
+                                <form class="row">
+                                    <div class="col-12">
+                                        <div class="input-group">
+                                            <span class=" h6 mr-2 mt-2">Trimestre 2</span>
+                                            <input class="form-control" placeholder="dd/mm/yyyy" name="d2" #c2="ngModel" [(ngModel)]="model" ngbDatepicker #d2="ngbDatepicker">
+                                            <button class="btn btn-outline-secondary calendar" (click)="d2.toggle()" type="button"></button>
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="row mb-2">
+                        <div class="col-md-6">
+                            <div>
+                                <form class="row ml-2">
+                                    <div class="col-12">
+                                        <div class="input-group">
+                                            <span class="mr-2 mt-2">Sequence 3</span>
+                                            <input class="form-control" placeholder="dd/mm/yyyy" name="d2" #c2="ngModel" [(ngModel)]="model" ngbDatepicker #d2="ngbDatepicker">
+                                            <button class="btn btn-outline-secondary calendar" (click)="d2.toggle()" type="button"></button>
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div>
+                                <form class="row ml-2">
+                                    <div class="col-12 ">
+                                        <div class="input-group">
+                                            <span class="mr-2 mt-2">Sequence 3</span>
+                                            <input class="form-control" placeholder="dd/mm/yyyy" name="d2" #c2="ngModel" [(ngModel)]="model" ngbDatepicker #d2="ngbDatepicker">
+                                            <button class="btn btn-outline-secondary calendar" (click)="d2.toggle()" type="button"></button>
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="row mb-2">
+                        <div class="col-md-6">
+                            <div>
+                                <form class="row ml-2">
+                                    <div class="col-12">
+                                        <div class="input-group">
+                                            <span class="mr-2 mt-2">Sequence 4</span>
+                                            <input class="form-control" placeholder="dd/mm/yyyy" name="d2" #c2="ngModel" [(ngModel)]="model" ngbDatepicker #d2="ngbDatepicker">
+                                            <button class="btn btn-outline-secondary calendar" (click)="d2.toggle()" type="button"></button>
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div>
+                                <form class="row ml-2">
+                                    <div class="col-12">
+                                        <div class="input-group">
+                                            <span class="mr-2 mt-2">Sequence 4</span>
+                                            <input class="form-control" placeholder="dd/mm/yyyy" name="d2" #c2="ngModel" [(ngModel)]="model" ngbDatepicker #d2="ngbDatepicker">
+                                            <button class="btn btn-outline-secondary calendar" (click)="d2.toggle()" type="button"></button>
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="row mb-2">
+                        <div class="col-md-6">
+                            <div>
+                                <form class="row">
+                                    <div class="col-12">
+                                        <div class="input-group">
+                                            <span class=" h6 mr-2 mt-2">Trimestre 3</span>
+                                            <input class="form-control" placeholder="dd/mm/yyyy" name="d2" #c2="ngModel" [(ngModel)]="model" ngbDatepicker #d2="ngbDatepicker">
+                                            <button class="btn btn-outline-secondary calendar" (click)="d2.toggle()" type="button"></button>
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div>
+                                <form class="row">
+                                    <div class="col-12">
+                                        <div class="input-group">
+                                            <span class=" h6 mr-2 mt-2">Trimestre 3</span>
+                                            <input class="form-control" placeholder="dd/mm/yyyy" name="d2" #c2="ngModel" [(ngModel)]="model" ngbDatepicker #d2="ngbDatepicker">
+                                            <button class="btn btn-outline-secondary calendar" (click)="d2.toggle()" type="button"></button>
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="row mb-2">
+                        <div class="col-md-6">
+                            <div>
+                                <form class="row ml-2">
+                                    <div class="col-12">
+                                        <div class="input-group">
+                                            <span class="mr-2 mt-2">Sequence 5</span>
+                                            <input class="form-control" placeholder="dd/mm/yyyy" name="d2" #c2="ngModel" [(ngModel)]="model" ngbDatepicker #d2="ngbDatepicker">
+                                            <button class="btn btn-outline-secondary calendar" (click)="d2.toggle()" type="button"></button>
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div>
+                                <form class="row ml-2">
+                                    <div class="col-12">
+                                        <div class="input-group">
+                                            <span class="mr-2 mt-2">Sequence 5</span>
+                                            <input class="form-control" placeholder="dd/mm/yyyy" name="d2" #c2="ngModel" [(ngModel)]="model" ngbDatepicker #d2="ngbDatepicker">
+                                            <button class="btn btn-outline-secondary calendar" (click)="d2.toggle()" type="button"></button>
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="row mb-2 ">
+                        <div class="col-md-6">
+                            <div>
+                                <form class="row ml-2">
+                                    <div class="col-12">
+                                        <div class="input-group">
+                                            <span class="mr-2 mt-2">Sequence 6</span>
+                                            <input class="form-control" placeholder="dd/mm/yyyy" name="d2" #c2="ngModel" [(ngModel)]="model" ngbDatepicker #d2="ngbDatepicker">
+                                            <button class="btn btn-outline-secondary calendar" (click)="d2.toggle()" type="button"></button>
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div>
+                                <form class="row ml-2">
+                                    <div class="col-12">
+                                        <div class="input-group">
+                                            <span class="mr-2 mt-2">Sequence 6</span>
+                                            <input class="form-control" placeholder="dd/mm/yyyy" name="d2" #c2="ngModel" [(ngModel)]="model" ngbDatepicker #d2="ngbDatepicker">
+                                            <button class="btn btn-outline-secondary calendar" (click)="d2.toggle()" type="button"></button>
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+            <!-- <p>This content was rendered eagerly</p> -->
+            <!-- <button mat-button matStepperPrevious>Back</button> -->
+            <div class="d-flex justify-content-center">
+                <button class="btn btn-warning" mat-button matStepperPrevious>Précédent</button>
+                <button class="btn btn-success ml-2 px-4 text-center" mat-button matStepperNext>Suivant</button>
+
+            </div>
+
+        </mat-step>
+        <mat-step>
+            <ng-template matStepLabel>Mot de passe superviseur</ng-template>
+            <div class="row mb-3">
+                <span class="pb-4"> <em>
+                    Veuillez Saisir le mot de passe pour le superviseur de l'etablissement
+                </em>
+                </span>
+            </div>
+            <div class="row">
+                <div class="col-md-3">
+
+                </div>
+                <div class=" row col-md-5">
+                    <div class="col-md-8">
+                        <label class="mr-1 mb-2" for="text-input">Mot de passe du superviseur</label>
+
+                    </div>
+                    <div class="col-md-4">
+                        <input class="form-control mb-2  px-4 input" id="text-input" type="password" />
+
+                    </div>
+                    <div class="col-md-8">
+                        <label class="mr-1" for="text-input">Confirmer mot de passe du superviseur</label>
+
+                    </div>
+                    <div class="col-md-4">
+                        <input class="form-control  px-4 input" id="text-input" type="password" />
+
+                    </div>
+                </div>
+
+                <div class="col-md-4">
+
+                </div>
+            </div>
+
+            <div class="d-flex justify-content-center mt-5">
+                <button class="btn btn-warning" mat-button matStepperPrevious>Précédent</button>
+                <button class="btn btn-success ml-2 pr-px-4 text-center" mat-button matStepperNext>Suivant</button>
+
+            </div>
+
+        </mat-step>
+        <mat-step>
+            <ng-template matStepLabel>Siasie de la licence</ng-template>
+            <div class="row mb-3">
+                <span class="pb-4"> <em>
+                    Veuillez Saisir un numero de licence
+                </em>
+                </span>
+            </div>
+            <h4>Je possede déja un numero de licence </h4>
+            <div class="row py-1">
+                <div class="col-md-4">
+                    <label class="mr-1" for="text-input">Merci de saisir votre numéro de licence</label>
+
+                </div>
+                <div class="col-md-4">
+                    <input class="form-control  px-4 input" id="text-input" type="password" />
+
+                </div>
+            </div>
+            <h4>Je veux demander un numéro de licence par email </h4>
+            <div class="row py-1">
+                <div class="col-md-2">
+                    <label class="mr-1" for="text-input">Demander une licence</label>
+
+                </div>
+                <div class="col-md-3">
+                    <select class="form-select form-select-sm" aria-label=".form-select-sm example">
+                        <option selected>Valible jusqu'au trimestres</option>
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                      </select>
+
+                </div>
+                <div class="col-md-1">
+                    <select class="form-select form-select-sm" aria-label=".form-select-sm example">
+                        <option selected></option>
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                      </select>
+
+                </div>
+                <div class="col-md-1">
+                    De l'année
+                </div>
+                <div class="col-md-1">
+                    <select class="form-select form-select-sm" aria-label=".form-select-sm example">
+                        <option selected></option>
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                      </select>
+
+                </div>/
+                <div class="col-md-1">
+                    <select class="form-select form-select-sm" aria-label=".form-select-sm example">
+                        <option selected></option>
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                      </select>
+
+                </div>
+                <div class="col-md-auto align-bottom">
+                    <Button class="btn btn-warning"> Envoyer la demande</Button>
+
+                </div>
+            </div>
+            <div class="row">
+                <span>Par Email: admisco@</span>
+            </div>
+            <div class="row">
+                <button class="btn btn-success"> Distributeurs agrées a travers le monde</button>
+            </div>
+            <h4>Je veux utiliser la version de démonstration </h4>
+            <div class="row py-1">
+                <div class="col-md-8">
+                    <!-- <label class="mr-1" for="text-input">Merci de saisir votre numero de licence</label> -->
+                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                    <label class="form-check-label" for="flexCheckDefault">
+                             Cocher cette case por activer la version de démonstration limitée du logiciel Compagnon                           </label>
+                    <div class="row ">
+                        <span class="ml-3">La version de demo comporte quelques limitations:</span>
+                        <ul>
+                            <li class="ml-5">Impossible de créer des eleves ou des enseignants</li>
+                            <li class="ml-5">Impossible de créer des classes</li>
+                            <li class="ml-5">Impossible de cloturer l'année scolaire</li>
+
+                        </ul>
+                    </div>
+                    <div class="row">
+                        <span class="ml-3">Ce choix entraine la copie automatiques de données de demonstration dans votre base de données:</span>
+                        <ul>
+                            <li class="ml-5">Eleves</li>
+                            <li class="ml-5">Enseignants</li>
+                            <li class="ml-5">Classes</li>
+
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="col-md-4">
+                    <span>Merci de choisir des données de test</span>
+
+                    <!-- <input class="form-control-sm  px-4 input" id="text-input" type="password" /> -->
+
+                </div>
+            </div>
+
+
+
+
+            <div class="d-flex justify-content-center">
+                <button mat-button (click)="onHome()" class="btn btn-success">Terminer</button>
+            </div>
+        </mat-step>
+    </mat-stepper>
+</div>1

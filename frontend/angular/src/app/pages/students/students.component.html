@@ -1,0 +1,252 @@
+<div class=" row" id="firstsec">
+    <div class="col-lg-1">
+
+    </div>
+    <div class="col-sm-12 col-lg-11 ">
+        <div class="row d-none d-sm-block">
+            <div class="col-lg-12 py-1 " id="badge">
+                <!-- <span class="d-none d-sm-block bold h3"> -->
+                <P class="h4 text-white">Élève</P>
+                <!-- </span> -->
+
+            </div>
+        </div>
+        <div class="row mt-3 ">
+            <div class="col-md-4 " id="onphone">
+                <!-- <button mat-stroked-button color="primary">Primary</button> -->
+                <button (click)="openDialog()" class="btn btn-outline-secondary py-2  ">Ajouter un eleve</button>
+            </div>
+
+
+        </div>
+        <div class="row my-4 mr-3" id="sec">
+            <div class="col-lg-3 py-2" id="touteclasse">
+                <div class="row   ">
+                    <div class="col-lg-3 col-12 d-flex flex-row-reverse">
+                        <div class="px-2 py-3">
+                            <span class="d-none d-sm-block pl-2">
+                                    Classe
+                                </span>
+                        </div>
+                    </div>
+                    <div class="col-lg-9  pt-2">
+
+                        <select class="form-select py-2 mr-2" aria-label="Default select example">
+                                <option selected>Toutes les classes</option>
+                                <option value="1">One</option>
+                                <option value="2">Two</option>
+                                <option value="3">Three</option>
+                              </select>
+                    </div>
+                    <!-- <div class="col-lg-1 mr-2">
+
+                    </div> -->
+
+                </div>
+
+                <!-- <p>Touteclasse</p> -->
+            </div>
+            <div class="col-lg-1">
+                <!-- <p>Touteclasse</p> -->
+            </div>
+            <div class="col-lg-8 py-2 " id="touteclasse">
+                <div class="row ">
+                    <div class="col-auto">
+
+                    </div>
+                    <div class="col-lg-2">
+                        <div class="py-3 ml-3 d-flex flex-row-reverse">
+                            <span>
+                                    Action
+                            </span>
+
+                        </div>
+                    </div>
+                    <div class="col-lg-3 mt-2  mr-1">
+
+                        <select class="form-select py-2 mr-2" aria-label="Default select example">
+                                <option selected></option>
+                                <option value="1">One</option>
+                                <option value="2">Two</option>
+                                <option value="3">Three</option>
+                              </select>
+                    </div>
+                    <div class="col-lg-1 mr-1">
+
+                    </div>
+                    <div class="col-lg-3 mr-1 mt-2">
+
+                        <select class="form-select py-2 mr-2" aria-label="Default select example">
+                                <option selected></option>
+                                <option value="1">One</option>
+                                <option value="2">Two</option>
+                                <option value="3">Three</option>
+                              </select>
+
+                    </div>
+                    <div class="col-auto py-3">
+                        <span>Valider</span>
+                    </div>
+
+                </div>
+
+
+
+            </div>
+        </div>
+        <div class="row my-2 mr-3" id="sec">
+
+            <div class="col-lg-12 " id="menu">
+
+                <div class="">
+                    <ul class="nav nav-pills d-flex justify-content-around py-2">
+                        <li class="nav-item"><a routerLink="/students" (click)="onMenu(1)" id="all" class="nav-link active px-4">Tous</a></li>
+                        <li class="nav-item"><a routerLink="y" class="nav-link px-2" (click)="onMenu(2)" id="nont">Non traite</a></li>
+                        <li class="nav-item"><a routerLink="e" class="nav-link px-2" (click)="onMenu(3)" id="pec">Preinscription en cours</a></li>
+                        <li class="nav-item"><a routerLink="k" class="nav-link px-2" (click)="onMenu(4)" id="pacc">Preinscription accepte</a></li>
+                        <li class="nav-item"><a routerLink="j" class="nav-link px-2" (click)="onMenu(5)" id="iac">Inscription accepte</a></li>
+                        <li class="nav-item"><a routerLink="#" class="nav-link px-2" (click)="onMenu(6)" id="rad">Radie</a></li>
+                        <li class="nav-item"><a routerLink="b" class="nav-link px-2" (click)="onMenu(7)" id="lda">Liste d'attente</a></li>
+                        <li class="nav-item"><a routerLink="x" href="#" class="nav-link px-2" (click)="onMenu(8)" id="sus">Suspendu</a></li>
+                    </ul>
+                </div>
+
+
+
+            </div>
+
+        </div>
+        <div class="row my-3" id="sec">
+
+            <div class="col-lg-9  col-sm-12">
+                <button type="button" class="btn btn-warning py-1 mx-4 px-lg-4 px-sm-1">Copier</button>
+                <button type="button" class="btn btn-warning py-1 mx-4 px-lg-4 px-sm-1">Imprimer</button>
+                <button type="button" class="btn btn-warning py-1 mx-4 px-lg-4 px-sm-1">Excel</button>
+                <button type="button" class="btn btn-warning py-1 mx-4 px-lg-4 px-sm-1">CSV</button>
+                <button type="button" class="btn btn-warning py-1 mx-4 px-lg-4 px-sm-1">Pdf</button>
+
+            </div>
+            <div class="col-lg-3">
+                <div class="row g-3 d-flex flex-row-reverse">
+                    <div class="col-md-8">
+                        <input type="text" id="inputPassword6" class="form-control py-2" aria-describedby="passwordHelpInline">
+                    </div>
+                    <div class="col-md-4">
+                        <label for="inputPassword6" class="col-form-label">Rechercher</label>
+                    </div>
+
+                    <!-- <div class="col-auto">
+                            <span id="passwordHelpInline" class="form-text">
+                            Must be 8-20 characters long.
+                          </span>
+                        </div> -->
+                </div>
+            </div>
+        </div>
+        <div class="row mr-3" style="overflow-x:auto;" id="sec">
+
+            <div class="col-sm-12 col-lg-12">
+                <table id="example" class="table table-striped table-bordered" style="width:100%">
+                    <thead>
+                        <tr>
+                            <th style="width:10%"></th>
+                            <th style="width:10%">#</th>
+                            <th style="width:10%">Photo</th>
+                            <th style="width:10%">Référence</th>
+                            <th style="width:10%">Noms</th>
+                            <th style="width:10%">Prénoms</th>
+                            <!-- <th style="width:10%">Prenons</th>
+                            <th style="width:10%">Prenons</th>
+                            <th style="width:10%">Prenons</th>
+                            <th style="width:10%">Prenons</th> -->
+                        </tr>
+                    </thead>
+                    <tbody>
+
+
+
+                        <tr (click)="onView()">
+                            <!-- <button routerLink="view"> -->
+                            <td>Brielle Williamson</td>
+                            <!-- </button> -->
+                            <td>Integration Specialist</td>
+                            <td>New York</td>
+                            <td>61</td>
+                            <td>2012-12-02</td>
+                            <td>$372,000</td>
+
+                        </tr>
+
+                        <tr>
+                            <td>Herrod Chandler</td>
+                            <td>Sales Assistant</td>
+                            <td>San Francisco</td>
+                            <td>59</td>
+                            <td>2012-08-06</td>
+                            <td>$137,500</td>
+                        </tr>
+                        <tr>
+                            <td>Rhona Davidson</td>
+                            <td>Integration Specialist</td>
+                            <td>Tokyo</td>
+                            <td>55</td>
+                            <td>2010-10-14</td>
+                            <td>$327,900</td>
+                        </tr>
+                        <tr>
+                            <td>Colleen Hurst</td>
+                            <td>Javascript Developer</td>
+                            <td>San Francisco</td>
+                            <td>39</td>
+                            <td>2009-09-15</td>
+                            <td>$205,500</td>
+                        </tr>
+                        <tr>
+                            <td>Sonya Frost</td>
+                            <td>Software Engineer</td>
+                            <td>Edinburgh</td>
+                            <td>23</td>
+                            <td>2008-12-13</td>
+                            <td>$103,600</td>
+                        </tr>
+                        <tr>
+                            <td>Jena Gaines</td>
+                            <td>Office Manager</td>
+                            <td>London</td>
+                            <td>30</td>
+                            <td>2008-12-19</td>
+                            <td>$90,560</td>
+                        </tr>
+                        <tr>
+                            <td>Quinn Flynn</td>
+                            <td>Support Lead</td>
+                            <td>Edinburgh</td>
+                            <td>22</td>
+                            <td>2013-03-03</td>
+                            <td>$342,000</td>
+                        </tr>
+                        <tr>
+                            <td>Charde Marshall</td>
+                            <td>Regional Director</td>
+                            <td>San Francisco</td>
+                            <td>36</td>
+                            <td>2008-10-16</td>
+                            <td>$470,600</td>
+                        </tr>
+                        <tr>
+                            <td>Haley Kennedy</td>
+                            <td>Senior Marketing Designer</td>
+                            <td>London</td>
+                            <td>43</td>
+                            <td>2012-12-18</td>
+                            <td>$313,500</td>
+                        </tr>
+
+                    </tbody>
+
+                </table>
+            </div>
+        </div>
+
+    </div>
+</div>
